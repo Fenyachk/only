@@ -108,6 +108,7 @@ class CarBookingApiComponent extends CBitrixComponent
 
         $carFilter = [
             'UF_CATEGORY' => $this->allowedCategories,
+            'UF_DRIVER_ID' => $this->userId, 
         ];
         if (!empty($bookedCarIds)) {
             $carFilter['!ID'] = $bookedCarIds;
